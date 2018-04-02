@@ -1,5 +1,5 @@
-{% set version = "2.2.1" %}
-{% set sha256 = "be7cf2e4de057f2a5307d9600177014daefd58a96de9cb9f437c26753fd462fe" %}
+{% set version = "2.2.2" %}
+{% set sha256 = "28b52c84bae3a564ce51bfb0753cbe360218bd648c64efa2808c886c18505688" %}
 
 package:
   name: cryptography-vectors
