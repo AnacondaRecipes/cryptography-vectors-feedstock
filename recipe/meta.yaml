@@ -9,7 +9,7 @@ source:
   sha256: 978ad96822c0e007a0a3d8187eb0eafbd9eb1d67b50cfac70277175e74957bfc
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
@@ -17,6 +17,8 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
+    - wheel
   run:
     - python
 
@@ -29,6 +31,7 @@ test:
 about:
   home: https://github.com/pyca/cryptography
   license: BSD-3-Clause OR Apache-2.0
+  license_family: BSD
   license_file:
     - LICENSE
     - LICENSE.BSD
