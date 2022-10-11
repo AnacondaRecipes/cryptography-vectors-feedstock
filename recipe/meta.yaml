@@ -1,5 +1,5 @@
 {% set name = "cryptography-vectors" %}
-{% set version = "37.0.1" %}
+{% set version = "38.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cryptography_vectors-{{ version }}.tar.gz
-  sha256: 66c9a714232be730fe822bd7e4e9da6231ff9e537ee4feb0f092c06b8ea4d94a
+  sha256: 0431fd107c1fbad0377704a7051945b3b391169fddc4f6fa0bd4edc6b6e235dd
 
 build:
+  skip: true  # [py<37]
   number: 0
-  noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
     - setuptools
     - wheel
   run:
-    - python >=3.6
+    - python
 
 test:
   requires:
@@ -34,14 +34,18 @@ test:
 about:
   home: https://github.com/pyca/cryptography
   license: BSD-3-Clause OR Apache-2.0
+  license_url: https://github.com/pyca/cryptography/blob/{{ version }}/vectors/LICENSE
   license_family: BSD
   license_file:
     - LICENSE
     - LICENSE.BSD
     - LICENSE.APACHE
+  description: |
+    This package contains test vectors for the cryptography package.
   summary: Test vectors for the cryptography package.
-  dev_url: https://github.com/pyca/cryptography/tree/master/vectors
+  dev_url: https://github.com/pyca/cryptography/tree/{{ version }}/vectors
   doc_url: https://cryptography.io/en/{{ version }}/
+  doc_source_url: https://github.com/pyca/cryptography/blob/{{ version }}/docs/index.rst
 
 extra:
   recipe-maintainers:
