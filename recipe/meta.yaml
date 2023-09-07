@@ -34,7 +34,6 @@ test:
 about:
   home: https://github.com/pyca/cryptography
   license: BSD-3-Clause OR Apache-2.0
-  license_url: https://github.com/pyca/cryptography/blob/{{ version }}/vectors/LICENSE
   license_family: BSD
   license_file:
     - LICENSE
@@ -45,7 +44,6 @@ about:
   summary: Test vectors for the cryptography package.
   dev_url: https://github.com/pyca/cryptography/tree/{{ version }}/vectors
   doc_url: https://cryptography.io/en/{{ version }}/
-  doc_source_url: https://github.com/pyca/cryptography/blob/{{ version }}/docs/index.rst
 
 extra:
   recipe-maintainers:
