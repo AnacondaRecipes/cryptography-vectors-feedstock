@@ -4,4 +4,4 @@ build_parameters:
   - "--error-overlinking"
 
 channels:
-  scrass_org: cryptography_41.0.7
+  - https://staging.continuum.io/prefect/cryptography_41.0.7
