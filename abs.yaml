@@ -1,7 +1,2 @@
-build_parameters:
-  - "--suppress-variables"
-  - "--skip-existing"
-  - "--error-overlinking"
-
 channels:
   - https://staging.continuum.io/prefect/cryptography_41.0.7
