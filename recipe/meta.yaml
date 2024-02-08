@@ -10,7 +10,7 @@ source:
   sha256: 8f7568a2cb615aa17193ede1611efd8b11de98827becb7c7005419491db3c998
 
 build:
-  skip: true  # [py<37]
+  skip: true  # [py<38]
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation --ignore-installed -vv
 
@@ -33,14 +33,11 @@ about:
   home: https://github.com/pyca/cryptography
   license: Apache-2.0 OR BSD-3-Clause
   license_family: Apache
-  license_file:
-    - LICENSE
-    - LICENSE.APACHE
-    - LICENSE.BSD
+  license_file: LICENSE
   summary: Test vectors for cryptography.
   description: |
     This package contains test vectors for the cryptography package.
-  dev_url: https://github.com/pyca/cryptography
+  dev_url: https://github.com/pyca/cryptography/tree/main/vectors
   doc_url: https://cryptography.io/
 
 extra:
