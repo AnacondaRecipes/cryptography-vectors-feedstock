@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cryptography_vectors-{{ version }}.tar.gz
-  sha256: 8f7568a2cb615aa17193ede1611efd8b11de98827becb7c7005419491db3c998
+  sha256: adcdccf5d9ee661a9602ad21d2525f678ba07a6e768ce79835994e208bab0e16
 
 build:
   skip: true  # [py<38]
