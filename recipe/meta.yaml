@@ -19,8 +19,6 @@ requirements:
     - python
     - pip
     - flit-core
-    - setuptools
-    - wheel
 
   run:
     - python
@@ -36,8 +34,11 @@ test:
 about:
   home: https://github.com/pyca/cryptography
   license: Apache-2.0 OR BSD-3-Clause
-  license_family: Apache
-  license_file: LICENSE
+  license_family: OTHER
+  license_file:
+    - LICENSE
+    - LICENSE.APACHE
+    - LICENSE.BSD
   summary: Test vectors for cryptography.
   description: |
     This package contains test vectors for the cryptography package.
