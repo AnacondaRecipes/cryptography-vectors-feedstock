@@ -1,5 +1,5 @@
 {% set name = "cryptography-vectors" %}
-{% set version = "42.0.2" %}
+{% set version = "42.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cryptography_vectors-{{ version }}.tar.gz
-  sha256: adcdccf5d9ee661a9602ad21d2525f678ba07a6e768ce79835994e208bab0e16
+  sha256: 505cd5e3b0cb32da1526f07042b7fc38a4b6c356710cb73d2b5f76b037a38ed1
 
 build:
   skip: true  # [py<38]
@@ -18,7 +18,7 @@ requirements:
   host:
     - python
     - pip
-    - flit-core
+    - flit-core >=3.2,<4
 
   run:
     - python
