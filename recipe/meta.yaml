@@ -15,6 +15,8 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
+  build:
+    - maturin >=1,<2
   host:
     - python
     - pip
@@ -23,6 +25,8 @@ requirements:
     - flit-core >=3.2,<4
   run:
     - python
+  run_constrained:
+    - bcrypt >=3.1.5
 
 test:
   requires:
