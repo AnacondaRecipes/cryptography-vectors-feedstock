@@ -29,16 +29,16 @@ test:
     - cryptography_vectors
 
 about:
-  home: https://github.com/pyca/cryptography
+  home: https://github.com/pyca/cryptography/tree/main/vectors
+  summary: Test vectors for cryptography.
+  description: |
+    This package contains test vectors which are used in pyca/cryptography's tests.
   license: Apache-2.0 OR BSD-3-Clause
   license_family: OTHER
   license_file:
     - LICENSE
     - LICENSE.APACHE
     - LICENSE.BSD
-  summary: Test vectors for cryptography.
-  description: |
-    This package contains test vectors for the cryptography package.
   dev_url: https://github.com/pyca/cryptography/tree/main/vectors
   doc_url: https://cryptography.io/
 
