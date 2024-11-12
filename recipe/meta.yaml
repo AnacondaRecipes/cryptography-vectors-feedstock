@@ -20,7 +20,7 @@ requirements:
   host:
     - python
     - pip
-    - setuptools
+    - setuptools !=74.0.0,!=74.1.0,!=74.1.1
     - wheel
     - flit-core >=3.2,<4
   run:
