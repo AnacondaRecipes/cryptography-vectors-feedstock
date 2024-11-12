@@ -12,10 +12,11 @@ source:
 build:
   skip: true  # [py<38]
   number: 0
-  script: python -m pip install . --no-deps --no-build-isolation -vv
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
   host:
+    - python
     - pip
     - flit-core >=3.2,<4
   run:
