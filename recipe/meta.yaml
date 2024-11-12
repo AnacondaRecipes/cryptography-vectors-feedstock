@@ -15,8 +15,6 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
-  build:
-    - maturin >=1,<2
   host:
     - python
     - pip
