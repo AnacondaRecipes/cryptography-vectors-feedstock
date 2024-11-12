@@ -15,8 +15,6 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
-  host:
-    - python
     - pip
     - setuptools !=74.0.0,!=74.1.0,!=74.1.1
     - wheel
