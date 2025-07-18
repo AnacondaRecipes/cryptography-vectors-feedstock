@@ -1,5 +1,5 @@
 {% set name = "cryptography-vectors" %}
-{% set version = "45.0.3" %}
+{% set version = "45.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cryptography_vectors-{{ version }}.tar.gz
-  sha256: b65cebdc334c6b9db8c79081a08253fddf262d009d2c914398edd24a4321db21
+  sha256: 1b9e2c1ee94e6b253a03fc0fd749d672ff6e1e48e50dd7af2334fde0303fbbe7
 
 build:
   skip: true  # [py<38]
