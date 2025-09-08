@@ -1,13 +1,13 @@
 {% set name = "cryptography-vectors" %}
-{% set version = "45.0.5" %}
+{% set version = "45.0.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cryptography_vectors-{{ version }}.tar.gz
-  sha256: 1b9e2c1ee94e6b253a03fc0fd749d672ff6e1e48e50dd7af2334fde0303fbbe7
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
+  sha256: 48e71fc4ac5f6298b2de53a99726ddc4a9e5ef0a94d921820109e7b90baf9f56
 
 build:
   skip: true  # [py<38]
@@ -23,24 +23,24 @@ requirements:
     - python
 
 test:
+  imports:
+    - cryptography_vectors
   requires:
     - pip
   commands:
     - pip check
-  imports:
-    - cryptography_vectors
 
 about:
   home: https://github.com/pyca/cryptography/tree/main/vectors
-  summary: Test vectors for cryptography.
-  description: |
-    This package contains test vectors which are used in pyca/cryptography's tests.
   license: Apache-2.0 OR BSD-3-Clause
   license_family: OTHER
   license_file:
     - LICENSE
     - LICENSE.APACHE
     - LICENSE.BSD
+  summary: Test vectors for cryptography.
+  description: |
+    This package contains test vectors which are used in pyca/cryptography's tests.
   dev_url: https://github.com/pyca/cryptography/tree/main/vectors
   doc_url: https://cryptography.io/
 
